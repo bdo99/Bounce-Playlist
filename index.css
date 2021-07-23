@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    padding: 10px;
+}
+
+.text-field {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 30px; width: 300px;
+}
+
+.grid {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 900px auto;
+    grid-template-areas:
+    "project-info my-info"
+    "project-content project-content"
+    "footer footer";
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.spotify{
+    border-radius: 10px;
+}
+
+.project-info {
+    grid-area: project-info;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: palegreen;
+}
+
+.my-info {
+    grid-area: my-info;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: palegreen;
+}
+
+.project-content {
+    grid-area: project-content;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: palegoldenrod;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: palegreen;
+}
